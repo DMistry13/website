@@ -9,7 +9,7 @@ body {
     font-family: 'Arial', sans-serif; /* Use a web-safe font */  
     line-height: 1.6; /* Improves readability */  
     color: #333; /* Dark gray text (easier on eyes than black) */  
-    background-color: #f4f4f4; /* Light gray background */  
+    background-color: #321b1b; /* Light gray background */  
 }  
 
 a {  
@@ -35,7 +35,7 @@ a {
 /* Header Styles */  
 header {  
     background: #35424a; /* Dark blue-gray background */  
-    color: white;  
+    color: rgb(10, 1, 1);  
     padding: 1rem 0; /* Vertical padding */  
 }  
 
@@ -47,7 +47,7 @@ nav ul {
 }  
 
 nav a {  
-    color: white;  
+    color: rgb(0, 0, 0);  
     font-weight: bold;  
     padding: 0.5rem 0; /* Vertical padding for hover effect */  
 }  
