@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My First Website</title>
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
- 
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
- <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
+<body>
+
+<div class="sidebar">
+    <h2>Dhruv</h2>
+    <a class="active" onclick="showSection('about')">About Me</a>
+    <a onclick="showSection('research')">Research</a>
+    <a onclick="showSection('photography')">Photography</a>
 </div>
 
+<div class="content">
+    <section id="about" class="section visible">
+        <h1>About Me</h1>
+        <p>Welcome! I'm Dhruv — I study, build, photograph, and experiment with tech, physics, and microfluidics.</p>
+    </section>
 
-<body>
-  <header>
-    <h1>Dhruv Mistry</h1>
-    <p>This site is built with HTML and CSS.</p>
-  </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I am learning how to code websites from scratch.</p>
+    <section id="research" class="section">
+        <h1>Research</h1>
+        <p>Here you can describe your projects — microfluidics, PDMS dyeing, PDE solvers, VHS digitisation, etc.</p>
     </section>
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>Portfolio landing page</li>
-        <li>Product showcase</li>
-        <li>Responsive blog layout</li>
-      </ul>
+
+    <section id="photography" class="section">
+        <h1>Photography</h1>
+        <p>A gallery or embedded images can go here.</p>
     </section>
-  </main>
-  <footer>
-    <p>Built with ❤️ using HTML & CSS.</p>
-  </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
