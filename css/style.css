@@ -1,125 +1,72 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-}
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box; /* Ensures padding/margin don't break layouts */  
+}  
 
-nav ul {
- 
-        list-style: none;
- 
-    }
+/* Global Styles */  
+body {  
+    font-family: 'Arial', sans-serif; /* Use a web-safe font */  
+    line-height: 1.6; /* Improves readability */  
+    color: #333; /* Dark gray text (easier on eyes than black) */  
+    background-color: #f4f4f4; /* Light gray background */  
+}  
 
-nav li {
- 
-        display: inline-block;
- 
-        margin-left: 100px;
- 
-    }   
-/*  
-.sidebar {
-    height: 100%;
-    width: 220px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #222;
-    padding-top: 20px;
-}
+a {  
+    text-decoration: none; /* Remove default underline from links */  
+    color: #333;  
+}  
 
-.sidebar h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
-}
+/* Container to center content (optional but common) */  
+.container {  
+    max-width: 1200px; /* Limits content width on large screens */  
+    margin: 0 auto; /* Centers content horizontally */  
+    padding: 0 20px; /* Adds space on left/right for small screens */  
+}  
 
-.sidebar a {
-    padding: 12px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #ddd;
-    display: block;
-    cursor: pointer;
-}
+/* Responsive Design: Mobile-first approach */  
+@media (max-width: 768px) {  
+    /* Styles for screens smaller than 768px (e.g., phones) */  
+    .logo h1 {  
+        font-size: 1.5rem; /* Smaller logo text on mobile */  
+    }  
+}  
 
-.sidebar a:hover {
-    background-color: #575757;
-}
+/* Header Styles */  
+header {  
+    background: #35424a; /* Dark blue-gray background */  
+    color: white;  
+    padding: 1rem 0; /* Vertical padding */  
+}  
 
-.sidebar a.active {
-    background-color: #4a90e2;
-    color: white;
-}
+/* Navigation Menu */  
+nav ul {  
+    list-style: none; /* Remove bullet points */  
+    display: flex; /* Arrange links horizontally (flexbox) */  
+    gap: 2rem; /* Space between links */  
+}  
 
-/* Content area 
-.content {
-    margin-left: 240px;
-    padding: 20px;
-}
+nav a {  
+    color: white;  
+    font-weight: bold;  
+    padding: 0.5rem 0; /* Vertical padding for hover effect */  
+}  
 
-.section {
-    display: none;
-}
+/* Highlight active page */  
+nav a.active {  
+    border-bottom: 3px solid #e8491d; /* Orange underline */  
+}  
 
-.section.visible {
-    display: block;
-}
-*/
+nav a:hover {  
+    color: #e8491d; /* Orange color on hover */  
+}  
 
-/* The side navigation menu */
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
+/* Responsive Navigation (Mobile) */  
+@media (max-width: 768px) {  
+    nav ul {  
+        flex-direction: column; /* Stack links vertically on mobile */  
+        gap: 1rem;  
+        text-align: center;  
+    }  
+}  
 
-/* Sidebar links */
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
-
-/* Active/current link */
-.sidebar a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}

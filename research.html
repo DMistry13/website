@@ -3,22 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Dhruv Mistry</title>
+    <title>Research</title>
     <link rel="stylesheet" href="css/style.css">
+    <title>Business website</title>
 </head>
 <body>
+<!---
 <div class="sidebar">
-  <a class="active" href="about_me.html">About me</a>
-  <a href="gallary.html">News</a>
-  <a href="research.html">Contact</a>
+    <h2>Dhruv Mistry</h2>
+    <a class="active" onclick="showSection('about')">About Me</a>
+    <a onclick="showSection('research')">Research</a>
+    <a onclick="showSection('photography')">Photography</a>
 </div>
+-->
 
-<div class="content">
-    <h1>Research</h1>
-    <p>Hi! I'm Dhruv, I'm interested in various creative projects.</p>
-</div>
+<nav>  
+    <ul>  
+        <li><a href="index.html" class="active">Home</a></li>  
+        <li><a href="about_me.html">About</a></li>  
+        <li><a href="research.html">Services</a></li>  
+        <li><a href="gallary.html">Contact</a></li>  
+    </ul>  
+</nav>  
+
+<main>  
+    <div class="container">  
+        <section class="contact">  
+            <h2>Contact Us</h2>  
+            <div class="contact-info">  
+                <p>Email: info@mywebsite.com</p>  
+                <p>Phone: (555) 123-4567</p>  
+                <p>Address: 123 Main St, City, Country</p>  
+            </div>  
+
+            <!-- Contact Form -->  
+            <form class="contact-form">  
+                <div class="form-group">  
+                    <label for="name">Name:</label>  
+                    <input type="text" id="name" required>  
+                </div>  
+                <div class="form-group">  
+                    <label for="email">Email:</label>  
+                    <input type="email" id="email" required>  
+                </div>  
+                <div class="form-group">  
+                    <label for="message">Message:</label>  
+                    <textarea id="message" rows="5" required></textarea>  
+                </div>  
+                <button type="submit" class="btn">Send Message</button>  
+            </form>  
+        </section>  
+    </div>  
+</main>  
+
 
 <script src="script.js"></script>
 </body>
 </html>
-
