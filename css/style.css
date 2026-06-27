@@ -1,72 +1,72 @@
-* {  
-    margin: 0;  
-    padding: 0;  
-    box-sizing: border-box; /* Ensures padding/margin don't break layouts */  
-}  
+ body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
 
-/* Global Styles */  
-body {  
-    font-family: 'Arial', sans-serif; /* Use a web-safe font */  
-    line-height: 1.6; /* Improves readability */  
-    color: #333; /* Dark gray text (easier on eyes than black) */  
-    background-color: #321b1b; /* Light gray background */  
-}  
+     header {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
 
-a {  
-    text-decoration: none; /* Remove default underline from links */  
-    color: #333;  
-}  
+    nav {
+        background-color: #444;
+            }
 
-/* Container to center content (optional but common) */  
-.container {  
-    max-width: 1200px; /* Limits content width on large screens */  
-    margin: 0 auto; /* Centers content horizontally */  
-    padding: 0 20px; /* Adds space on left/right for small screens */  
-}  
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+            }
 
-/* Responsive Design: Mobile-first approach */  
-@media (max-width: 768px) {  
-    /* Styles for screens smaller than 768px (e.g., phones) */  
-    .logo h1 {  
-        font-size: 1.5rem; /* Smaller logo text on mobile */  
-    }  
-}  
+     nav ul li {
+        margin: 0 15px;
+    }
 
-/* Header Styles */  
-header {  
-    background: #35424a; /* Dark blue-gray background */  
-    color: rgb(10, 1, 1);  
-    padding: 1rem 0; /* Vertical padding */  
-}  
+     nav ul li a {
+        color: white;
+                text-decoration: none;
+     }
 
-/* Navigation Menu */  
-nav ul {  
-    list-style: none; /* Remove bullet points */  
-    display: flex; /* Arrange links horizontally (flexbox) */  
-    gap: 2rem; /* Space between links */  
-}  
+    main {
+        padding: 20px;
+     }
 
-nav a {  
-    color: rgb(0, 0, 0);  
-    font-weight: bold;  
-    padding: 0.5rem 0; /* Vertical padding for hover effect */  
-}  
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+         width: 100%;
+         bottom: 0;
+     }
 
-/* Highlight active page */  
-nav a.active {  
-    border-bottom: 3px solid #e8491d; /* Orange underline */  
-}  
+   @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
 
-nav a:hover {  
-    color: #e8491d; /* Orange color on hover */  
-}  
+        nav ul li {
+        margin: 10px 0;
+                }
 
-/* Responsive Navigation (Mobile) */  
-@media (max-width: 768px) {  
-    nav ul {  
-        flex-direction: column; /* Stack links vertically on mobile */  
-        gap: 1rem;  
-        text-align: center;  
-    }  
-}  
+        footer {
+            position: static;
+        }
+     }
+@media (max-width: 480px) {
+        header h1 {
+            font-size: 18px;
+        }
 
+        main {
+            padding: 10px;
+        }
+    }
